@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from 'axios';
 
 export const getProducts = async (): Promise<Product[]> => {
     try {
-      const response: AxiosResponse<Product[]> = await axios.get('https://fakestoreapi.com/products'); // Reemplaza con tu URL
+      const response: AxiosResponse<Product[]> = await axios.get('https://fakestoreapi.com/products'); 
      
       return response.data;
     } catch (error) {
